@@ -32,6 +32,6 @@ class String
 
 
 
-    
+
   end
 end
