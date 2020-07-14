@@ -16,11 +16,11 @@ class String
 
   def count_sentences
     # self.split("!", "." , "!").delete("").count
-    binding.pry 
+    binding.pry
 
     self.split("!" || "." || "!").count
     #then remove empty elements
-    # binding.pry 
+    # binding.pry
 
     # new_array = self.split("!" || "." || "!").delete_if(&:blank?)
     # return new_array.count
