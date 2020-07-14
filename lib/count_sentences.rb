@@ -18,14 +18,11 @@ class String
     # self.split("!", "." , "!").delete("").count
     binding.pry
 
-    self.split("." || "!" || "?").count
+    # self.split("." || "!" || "?").count
     #then remove empty elements
     # binding.pry
 
-    # new_array = self.split("!" || "." || "!").delete_if(&:blank?)
-    # return new_array.count
-
-
-
+    new_array = self.split(/\.|\!|\?/).delete_if(&:blank?)
+    return new_array.count
   end
 end
