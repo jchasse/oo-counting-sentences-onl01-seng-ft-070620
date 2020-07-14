@@ -24,7 +24,7 @@ class String
 
     new_array = self.split(/\.|\!|\?/)
     new_array.delete_if do |object|
-      if object.length < 2
+      object.length < 2
     end
     return new_array.count
   end
