@@ -18,7 +18,7 @@ class String
     # self.split("!", "." , "!").delete("").count
     binding.pry
 
-    self.split("!" || "." || "!").count
+    self.split("." || "!" || "!").count
     #then remove empty elements
     # binding.pry
 
