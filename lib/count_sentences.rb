@@ -22,7 +22,10 @@ class String
     #then remove empty elements
     # binding.pry
 
-    new_array = self.split(/\.|\!|\?/).delete_if("")
+    new_array = self.split(/\.|\!|\?/)
+    new_array.delete_if do |object|
+      if object.length < 2
+    end
     return new_array.count
   end
 end
